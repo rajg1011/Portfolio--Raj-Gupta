@@ -1,0 +1,288 @@
+@import "../../variables.css";
+.contact-section {
+  margin: 3rem 4rem;
+}
+
+.contact-heading-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.isPhone-coffee {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.contact-heading h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.buy-coffee {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 1rem 2rem;
+}
+
+.address-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.address {
+  max-width: 35%;
+}
+
+.address ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.address ul li span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.address ul li h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contact-divider {
+  height: 2px;
+  width: 100%;
+  background-color: var(--theme-color-blue);
+  margin-top: 1rem;
+}
+
+.follow-links div {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--theme-color-blue);
+  border-radius: 10px;
+}
+
+.follow-links {
+  margin-top: 0.5rem;
+}
+
+.follow-links div {
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+.follow-links a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.follow-links a i {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(80%);
+}
+
+.meet-form {
+  margin-left: 2rem;
+  min-width: 50vw;
+}
+
+.meet-form h4 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 600;
+}
+.meet-form form input,
+.meet-form form textarea {
+  color: var(--theme-color-black);
+}
+
+.meet-form form input {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0rem;
+  height: 3rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.name-email {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name-email input {
+  min-width: 49%;
+}
+
+.subject-form {
+  min-width: 100%;
+}
+.subject-form input {
+  min-width: 100%;
+}
+
+.meet-form form textarea {
+  margin: 1rem 0rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.meet-form form button,
+.buy-details form button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  width: 20%;
+  transition: scale 0.3s ease-in-out;
+}
+
+.follow-links div {
+  transition: scale 0.3s ease-in-out;
+}
+
+.meet-form form button:hover,
+.follow-links div:hover {
+  scale: 1.2;
+}
+
+.meet-form form input:focus,
+.meet-form form textarea:focus,
+.buy-details form input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 4px 2px var(--theme-color-blue);
+}
+
+.btn-primary {
+  background-color: var(--theme-color-blue) !important;
+}
+
+/* Coffee From */
+
+.buy-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  padding: 2rem;
+  background-color: var(--header-color);
+}
+
+.buy-details form {
+  padding: 2rem;
+  border: 2px solid var(--theme-color-blue);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.buy-details form h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.buy-details form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: black !important;
+}
+
+.buy-details form button {
+  width: 40%;
+}
+
+/* Responsiveness */
+
+@media screen and (width>1500px) {
+  .address-email {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (width<915px) {
+  .address-email {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .address {
+    min-width: 100%;
+    margin-top: 5vh;
+  }
+
+  .meet-form {
+    margin-left: 0rem;
+  }
+  .follow-links div {
+    margin-right: 4rem;
+  }
+
+  .address ul li h3 {
+    margin-left: 3rem;
+  }
+  .meet-form {
+    min-width: 100%;
+  }
+  .buy-details form input {
+    height: 4rem;
+  }
+  .buy-details form button {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (width<550px) {
+  .buy-details form input {
+    height: 6rem;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (width<400px) {
+  .name-email {
+    flex-direction: column;
+  }
+  .meet-form form input {
+    height: 4rem;
+  }
+  .meet-form form button {
+    padding: 1.4rem 1.8rem;
+    border-radius: 10px;
+  }
+}

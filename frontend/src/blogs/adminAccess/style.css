@@ -1,0 +1,47 @@
+.admin-page {
+  margin: 2rem;
+}
+.admin-page h1 {
+  font-weight: 800;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  line-height: 5rem;
+  text-shadow: 1px 2px var(--theme-color-blue);
+}
+
+.admin-page form {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.admin-page form label {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.admin-page form input,
+.admin-page form textarea {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: black;
+  margin-bottom: 1.3rem;
+  outline: none;
+  border: none;
+}
+
+.admin-page form input:focus,
+.admin-page form textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 4px 2px var(--theme-color-blue);
+}
+
+.admin-page form button {
+  width: 30vw;
+  display: block;
+  margin: 2rem auto;
+}

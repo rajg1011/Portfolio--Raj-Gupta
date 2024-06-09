@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Razorpay schema
+model Razorpay {
+  id                  Int      @id @default(autoincrement())
+  name                String?
+  razorpay_payment_id String
+  razorpay_order_id   String
+  razorpay_signature  String
+  status              String   @default("Pending")
+  createdAt           DateTime @default(now())
+}
+
+//Blog Post Schema
+model Post {
+  id           Int       @id @default(autoincrement())
+  tag          String
+  post_data    String    @db.Text
+  route        String
+  main_content String
+  created_at   DateTime  @default(now())
+  comments     Comment[]
+}
+
+//User Schema
+model User {
+  id       Int       @id @default(autoincrement())
+  name     String
+  email    String    @unique
+  password String
+  isAdmin  Boolean   @default(false)
+  comments Comment[]
+}
+
+// Comment Schema
+model Comment {
+  id                  Int      @id @default(autoincrement())
+  comment_description String   @db.Text
+  created_at          DateTime @default(now())
+  post_id             Int
+  post                Post     @relation(fields: [post_id], references: [id])
+  user_id             Int
+  user                User     @relation(fields: [user_id], references: [id])
+}

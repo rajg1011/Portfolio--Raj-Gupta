@@ -1,0 +1,308 @@
+.skill-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 5rem;
+  margin-bottom: 10vh;
+}
+.skills-section {
+  margin-right: 5vw;
+}
+
+.skills-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.skills-section p {
+  font-size: 1.5rem;
+}
+
+.heading-skills span {
+  font-weight: 800;
+}
+
+caption {
+  color: var(--main-font-color);
+  min-width: 20vw;
+  text-align: left;
+  font-size: 1.7rem;
+}
+
+.skill-table {
+  border-collapse: separate;
+  border-spacing: 8px;
+  font-size: 1.2rem;
+}
+
+.skill-table td {
+  padding: 1rem 1rem;
+  min-width: 20vw;
+}
+
+.filler-skills {
+  height: 10px;
+  width: 100%;
+  background-color: var(--theme-color-blue);
+  border-radius: 10px;
+}
+
+.filler-skills-inner {
+  height: 10px;
+  background-color: var(--theme-color-white);
+  border-radius: 10px;
+}
+
+.education-section {
+  width: 45vw;
+}
+
+.selection-button {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--theme-color-blue);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.accomplishment-button,
+.education-button {
+  padding: 1rem 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.dynamic-change-edu-acc {
+  background-color: var(--theme-color-blue);
+}
+
+.accomplishment-button:hover,
+.education-button:hover {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    scale: 1;
+  }
+  40% {
+    scale: 0.9;
+  }
+  60% {
+    scale: 1.1;
+  }
+}
+
+.education ul,
+.accomplish-section ul {
+  margin-top: 1rem;
+  list-style: none;
+  min-width: 100%;
+}
+
+.education ul li,
+.accomplish-section ul li {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.institute-name-year {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.year {
+  margin-right: 10%;
+  margin-left: 10px;
+  color: grey;
+}
+
+.divider-education,
+.divider-accom {
+  height: 2px;
+  background-color: var(--theme-color-blue);
+  width: 30%;
+}
+.divider-accom {
+  margin-top: 5px;
+}
+
+.education-details,
+.accomplish-section ul li {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.education-details span:before,
+.education-details p:before,
+.accomplish-section ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f178";
+  display: inline-block;
+  padding-right: 5px;
+  color: var(--theme-color-blue);
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.accomplish-section {
+  margin-top: 2rem;
+}
+
+.phone-divider {
+  border-right: 1px solid var(--theme-color-blue);
+  height: inherit;
+  width: 20px;
+}
+
+/* Responsiveness  */
+
+@media screen and (width>1440px) {
+  .accomplish-section ul li {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (width<840px) {
+  .skill-page {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 4rem;
+  }
+  .education-section {
+    width: 100%;
+  }
+
+  caption {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  .skill-table,
+  caption {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill-table td {
+    min-width: 30vw;
+  }
+
+  .selection-button {
+    margin: auto;
+    margin-top: 10vh;
+    width: 80%;
+  }
+
+  .education ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+
+  .accomplish-section ul {
+    margin-top: 5vh;
+  }
+  .education ul li {
+    flex: 0 0 45%;
+  }
+
+  .skills-section p {
+    font-size: 2rem;
+  }
+  .heading-skills span {
+    font-size: 1.4rem;
+  }
+  .year {
+    font-size: 1.1rem;
+  }
+  .institute-name-year span h3 {
+    font-size: 1.8rem;
+  }
+  .education-details,
+  .accomplish-section ul li {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (width<660px) {
+  .institute-name-year {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .selection-button {
+    width: 100%;
+  }
+  .accomplishment-button,
+  .education-button {
+    min-width: 50%;
+  }
+  .skill-table tr {
+    min-width: 80vw;
+  }
+
+  .skill-table td {
+    width: 33.33%;
+  }
+}
+
+@media screen and (width<535px) {
+  .education ul {
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+  }
+  .education ul li {
+    width: 60%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (width<375px) {
+  .skill-table {
+    margin: 0;
+  }
+  .skill-table td {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .skills-section {
+    margin-right: 0vw;
+  }
+  .selection-button {
+    font-size: 1.9rem;
+  }
+  .heading-skills span {
+    font-size: 1.3rem;
+  }
+  .institute-name h3 {
+    font-size: 2rem;
+  }
+  .year {
+    font-size: 1.2rem;
+  }
+  .education-details,
+  .accomplish-section ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (width<330px) {
+  .selection-button {
+    flex-direction: column;
+  }
+}

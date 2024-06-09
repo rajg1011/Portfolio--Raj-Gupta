@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black !important;
+  overflow-x: hidden !important;
+  color: var(--main-font-color);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-attachment: fixed;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-font-color);
+  border-radius: 5px;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--main-font-color);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+/* Responsiveness */
+
+@media only screen and (width>1700px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (width>1400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (width<1220px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (width<1000px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (width<900px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (width<850px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (width<485px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (width<400px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (width<350px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (width<290px) {
+  html {
+    font-size: 6px;
+  }
+}

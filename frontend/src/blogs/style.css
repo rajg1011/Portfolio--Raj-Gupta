@@ -1,0 +1,370 @@
+.blog-page {
+  margin-top: 4rem;
+}
+
+.blog-page h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 2px 1px var(--theme-color-blue);
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.blog-page h1 span {
+  color: var(--theme-color-blue);
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}
+
+.blog-card {
+  flex: 0 0 26%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.blog-card span {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  background-color: var(--theme-color-blue);
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.blog-card h3 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.blog-card p {
+  text-align: left;
+  word-spacing: 2px;
+  margin-top: 1rem;
+  min-height: 15vh;
+}
+
+.blog-card-link {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--theme-color-blue);
+}
+
+.blog-card-link:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f30b";
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: middle;
+  font-weight: 800;
+}
+
+.border-bottom {
+  width: 100%;
+  height: 2px;
+  background-color: var(--theme-color-blue);
+  margin-top: 0.5rem;
+}
+
+/* user profile css  */
+
+.user-pro {
+  text-align: right;
+  margin: 0rem 3rem;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  display: inline-block;
+}
+
+.user-pro p {
+  color: var(--theme-color-blue);
+  height: 2rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.logout-tab {
+  position: absolute;
+  top: 2rem;
+  min-width: 10vw;
+  text-align: justify;
+  right: -2rem;
+  background-color: var(--header-color);
+}
+
+.logout-tab div,
+.visit-link {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.visit-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* blog-page css */
+.editor-html {
+  margin: 3rem;
+}
+
+.editor-html h1,
+.editor-html h2,
+.editor-html h3,
+.editor-html h4 {
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  margin-top: 4rem;
+}
+
+.editor-html h2,
+.editor-html h3,
+.editor-html h4 {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--theme-color-blue);
+}
+
+.editor-html h1 {
+  display: block;
+  font-size: 3.8rem;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 2px 2px var(--theme-color-blue);
+}
+
+.editor-html h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.editor-html h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.editor-html h4 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.editor-html p,
+.editor-html ul li {
+  word-spacing: 2px;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  text-align: justify;
+}
+.editor-html ul li {
+  margin-top: 1rem;
+}
+
+.editor-html a {
+  text-decoration: none;
+  color: var(--theme-color-blue);
+}
+
+.editor-html img {
+  max-width: 70vw;
+  max-height: 50vh;
+  display: block;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 4px var(--theme-color-blue);
+}
+
+.editor-html table {
+  border-collapse: collapse;
+}
+
+.editor-html pre {
+  font-weight: 900;
+}
+
+/* Auth Form  */
+
+.auth-form-page {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form-page h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 3rem;
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px var(--theme-color-blue);
+}
+.auth-form-page form {
+  position: relative;
+}
+
+.auth-form-page form input {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid var(--theme-color-blue);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.auth-form-page form input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 4px 2px var(--theme-color-blue);
+}
+
+.auth-form-page form label {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.auth-form-page form button {
+  margin-top: 1.5rem;
+  background-color: var(--theme-color-blue);
+}
+
+.auth-form-page form p {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  position: absolute;
+  left: 90%;
+  text-decoration: none;
+}
+.auth-link {
+  text-decoration: none;
+  color: var(--theme-color-blue);
+}
+
+@media screen and (width<1200px) {
+  .auth-form-page {
+    margin: 2rem;
+  }
+  .auth-form-page h1 {
+    font-size: 4rem;
+  }
+  .auth-form-page form label {
+    font-size: 1.4rem;
+  }
+  .auth-form-page form input {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  .auth-form-page form button {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (width<440px) {
+  .auth-form-page h1 {
+    font-size: 4.3rem;
+  }
+  .auth-form-page form label {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+  .auth-form-page form input {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  .auth-form-page form button {
+    font-size: 1.8rem;
+  }
+}
+
+/* comment section css  */
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-section {
+  margin: 5rem auto 0rem auto;
+}
+
+.user-comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60vw;
+  background-color: black;
+  text-align: justify;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 0px 5px 1px var(--theme-color-blue);
+  border-radius: 10px;
+}
+
+.comment-details {
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.user-name {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--theme-color-blue);
+}
+.user-name,
+.data {
+  margin: 0.3rem 0 0 0;
+  padding: 0;
+}
+
+.delete-trash {
+  cursor: pointer;
+}
+
+.comment-form form textarea {
+  display: block;
+  width: 60vw;
+  height: 30vh;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  box-shadow: 0px 0px 5px 1px white;
+  color: white;
+}
+
+.comment-form form button {
+  display: block;
+  width: 10vw;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+@media screen and (width<690px) {
+  .comment-form form button {
+    width: 15vw;
+  }
+  .comment-form form textarea {
+    font-size: 1.2rem;
+  }
+}

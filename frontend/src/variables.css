@@ -1,0 +1,7 @@
+:root {
+  --theme-color-blue: #6c63ff;
+  --theme-color-black: black;
+  --theme-color-white: white;
+  --header-color: rgba(0, 0, 0, 0.5);
+  --main-font-color: white;
+}
