@@ -22,7 +22,7 @@ app.use(cookieParser());
 //Specifies the origins that are allowed to access the resources.
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://www.rajg.in.net/"],
     //server allow cookies, header etc
     credentials: true,
   })
