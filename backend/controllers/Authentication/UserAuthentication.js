@@ -56,7 +56,7 @@ const SignUpUser = async (req, res) => {
     var token = jwt.sign({ email }, process.env.JWT_SECRET_USER, {
       expiresIn: "1h",
     });
-    res.cookie("token", token, {domain: "https://www.rajg.in.net", secure: true, sameSite: 'strict', httpOnly: true, maxAge: 360000 });
+    res.cookie("token", token, {domain: "rajg.in.net", secure: true, sameSite: 'strict', httpOnly: true, maxAge: 360000 });
     res.json({
       message: "User created successfully",
       name,
@@ -120,7 +120,7 @@ const LoginUser = async (req, res) => {
       let admin_token = jwt.sign({ email }, process.env.JWT_SECRET_ADMIN, {
         expiresIn: "1h",
       });
-      res.cookie("admin_token", admin_token, {domain: "https://www.rajg.in.net", secure: true, sameSite: 'strict', httpOnly: true, maxAge: 360000});
+      res.cookie("admin_token", admin_token, {domain: "rajg.in.net", secure: true, sameSite: 'strict', httpOnly: true, maxAge: 360000});
       return res.send({
         message: "Admin Login Successfully",
         name: findUser.name,
@@ -134,7 +134,7 @@ const LoginUser = async (req, res) => {
       let token = jwt.sign({ email }, process.env.JWT_SECRET_USER, {
         expiresIn: "1h",
       });
-      res.cookie("token", token, {domain: "https://www.rajg.in.net", secure: true, sameSite: 'strict', httpOnly: true, maxAge: 360000});
+      res.cookie("token", token, {domain: "rajg.in.net", secure: true, sameSite: 'strict', httpOnly: true, maxAge: 360000});
       return res.send({
         message: "User Login Successfully",
         name: findUser.name,
