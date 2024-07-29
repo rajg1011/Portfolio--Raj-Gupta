@@ -15,8 +15,6 @@ export default function TextEditor({ onChangeInEditor }) {
         apiKey={import.meta.env.VITE_TEXT_EDITOR_API}
         initialValue={content}
         init={{
-          plugins:
-            "anchor autolink charmap codesample emoticons image link lists searchreplace table visualblocks wordcount checklist mediaembed casechange export pageembed linkchecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate mentions tableofcontents footnotes mergetags autocorrect typography inlinecss markdown",
           height: "60vh",
           menubar: false,
           toolbar:

@@ -9,7 +9,7 @@ const cookieParser = require("cookie-parser");
 const app = express();
 
 //Middlewares
-//Pasrse JSON data to Js object
+//Parse JSON data to Js object
 app.use(express.json());
 
 //urlencoded parse form data(url encoded data) and make it available for req.body
