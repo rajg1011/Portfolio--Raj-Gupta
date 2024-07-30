@@ -1,3 +1,7 @@
+.front-page{
+  background-attachment: fixed;
+}
+
 .front-page-details {
   display: flex;
   color: var(--main-font-color);
@@ -75,10 +79,42 @@
   backdrop-filter: blur(10px);
 }
 
-.header-svg {
-  cursor: grab;
-  height: 50vh;
+
+.front-page-image{
+  width: 45%;
+  height: 80%;
+  position: relative;
+  bottom: 0;
 }
+
+.front-page-image img{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  user-select: none;
+  transition: filter ease-in-out 1s, top 1s, left 1s;
+}
+
+.dp-background{
+  filter: drop-shadow(0 -3mm 9mm rgb(160, 0, 210));
+}
+
+.header-dp{
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+.front-page-image:hover .dp-background{
+  top: 20px;
+}
+.front-page-image:hover .header-dp{
+  filter: drop-shadow(0 0 1.5rem black);
+  left: 54%;
+}
+
+
 
 /* Responsiveness  */
 
@@ -94,12 +130,35 @@
   }
 }
 
+@media screen and (width<900px) {
+ .front-page-image{
+    width: 30%;
+  }
+  .front-page-my-data h1 {
+    font-size: 5.3rem;
+  }
+  
+  .front-page-my-data h2 {
+    font-size: 3.3rem;
+  }
+  
+  .front-page-buttons button {
+    font-size: 1.7rem;
+  }
+}
+
 @media screen and (width<750px) {
   .front-page-details {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 5vh;
+    gap: 2rem;
+  }
+
+  .front-page-image{
+    width: 20%;
+    height: 50%;
   }
 
   .front-page-my-data {
@@ -119,11 +178,6 @@
     font-size: 4rem;
     margin-top: 1.6rem;
   }
-  .header-svg {
-    height: 40vh;
-    min-width: 70vw;
-    margin-top: 2rem;
-  }
 
   .front-page-buttons button {
     margin: 1rem 2rem 0rem 0rem;
@@ -135,12 +189,7 @@
 
 @media screen and (width<560px) {
   .front-page-my-data {
-    min-width: 90%;
-  }
-  .header-svg {
-    height: 40vh;
-    min-width: 90vw;
-    margin-top: 2rem;
+    min-width: 70%;
   }
 }
 

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
-import HeaderImage from "../assetComp/headerImage";
+import DpBackground from "../../assets/images/header-dp-background.png"
+import HeaderDP from "../../assets/images/dp.png"
 import TypeAnimation from "../assetComp/typingAnimation";
 import { useMediaQuery } from "react-responsive";
 import YoutubeCard from "../assetComp/youtubeCard";
@@ -27,7 +28,7 @@ export default function FrontPage() {
     <div className="front-page">
       <motion.div
         className="front-page-details"
-        initial={{ y: 50 }}
+        initial={{ y: 30 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
@@ -56,7 +57,8 @@ export default function FrontPage() {
           </div>
         </div>
         <div className="front-page-image">
-          <HeaderImage />
+          <img src={DpBackground} alt="Image Background" className="dp-background" draggable="false"/>
+          <img src={HeaderDP} alt="Raj Gupta Image" className="header-dp" draggable="false"/>
         </div>
       </motion.div>
       {ReactDOM.createPortal(
